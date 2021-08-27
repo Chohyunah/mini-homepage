@@ -1,0 +1,42 @@
+.news{
+  font-weight:bold;
+  margin:20px;
+  color:steelblue;
+  border-bottom: 1px solid darkgray;
+}
+.content{
+  margin-left:20px;
+  background-color:rgb(152, 200, 255);
+  color: white; 
+  border-radius: 3px;
+  display: inline-block; 
+  margin-bottom: 3px;
+  font-family: 'Gowun Dodum', sans-serif;
+}
+.contentpic{
+  margin-left:20px;
+  background-color:rgb(255, 170, 184);
+  color: white; 
+  border-radius: 3px;
+  display: inline-block; 
+  margin-bottom: 3px;
+  font-family: 'Gowun Dodum', sans-serif;
+}
+
+.room{
+  font-weight:bold;
+  margin:20px;
+  padding-top: 60px;
+  color:steelblue;
+  border-bottom: 1px solid darkgray;
+}
+
+.room_gif{
+  margin: 20px;
+}
+.column2-1{
+  flex:2;
+  background-color: white;
+  border-radius:9px;
+  font-family: 'Gowun Dodum', sans-serif;
+}

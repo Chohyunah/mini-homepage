@@ -1,0 +1,72 @@
+.scrollbox{
+  position: absolute;
+  margin-top: 4.5rem;
+  top: 40px;
+  left: 290px;
+  right: 100px;
+  bottom: 15px;
+  overflow: auto;
+}
+.diary_ {
+  position: relative;
+}
+.calendar {
+  border: 1px solid rgb(201,201,201);
+  display: flex;
+  padding: 19x;
+  margin: 20px 10px 10px 10px;
+}
+
+.todaydate {
+  flex: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  color: rgb(16, 16, 128);
+  font-weight: bold;
+}
+
+
+.diary_contents {
+  border: 0.1px solid rgb(201, 201, 201);
+  margin: 20px 10px;
+  padding: 20px;
+}
+
+.diary_write {
+  display: block;
+  text-align: center;
+}
+.diary_date{
+  display: block;
+  text-align: left;
+  color: rgb(16, 16, 128);
+  font-family: 'Gugi', cursive;
+  font-size:10pt;
+}
+
+#secret-box {
+  display: none;
+}
+.button-box {
+  display: flex;
+  justify-content: center;
+  
+
+}
+
+.diary-button {
+  margin-top: 1rem;
+  background: #fff;
+  color: #fff;
+  padding: 1rem;
+  cursor: pointer;
+  font-family: 'Gowun Dodum', sans-serif;
+  transition: 800ms ease all;
+  border: none;
+}
+
+.diary-button:hover {
+  background: #7d9fc7;
+  color: #fff;
+}
