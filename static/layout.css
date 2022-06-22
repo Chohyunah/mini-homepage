@@ -1,0 +1,223 @@
+body {
+    background-color: #a3a3a3;
+    /** body에 배경이미지 적용 */
+    background-image: url("../static/images/pattern.png");
+    /** 고정된 사이즈로 설정 */
+    background-size: 100px;
+  
+    /** 기본 body 사이즈를 화면 크기로 고정 */
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0
+  }
+  
+  .bookcover {
+    /** 배경 색깔 지정  */
+    background-color: #b4d1da;
+    /** 모서리 둥글게 */
+    border-radius: 9px;
+    /** 윤곽선 */
+    border: 1px solid #738186;
+  
+    /** 기본 너비, 높이 지정 (반응형 X) */
+    width: 960px;
+    height: 660px;
+  
+    /** 좌우 마진을 auto(중앙에 배치), 상하 마진을 100px로 지정 */
+    margin: 100px auto;
+  
+    /** .bookdot 요소에서 absolute 속성값을 이용하기 위해 position: relative 로 설정 */
+    position: relative;
+    
+  }
+  .bookdot{
+    position:absolute;
+    border-style: dashed; 
+    border-width: 2px; 
+    border-radius: 9px;
+    border-color: white; 
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    top: 12px;
+  }
+  .page{
+    position:absolute;
+    border-radius: 9px;
+    background-color: rgb(230, 230, 230);
+    top: 9px;
+    left: 9px;
+    right: 9px;
+    bottom: 9px;
+    display: flex;
+    padding: 9px;
+  }
+  .profile{
+    flex:2;
+    background-color: white;
+    border-radius:9px;
+    margin-top:5px;
+  }
+  .column1{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    margin-right:10px;
+    text-align: center;
+    font-family: 'Poor Story', cursive;
+    line-height: 20px;
+  }
+  
+  .pic{
+    margin: 35px;
+  }
+  .red{
+    color: red;
+    font-family: 'Poor Story', cursive;
+  }
+  .top2_title{
+    margin-left: 5px;
+    font-family: 'Gowun Dodum', sans-serif;
+  }
+  
+  .top2_url{
+    margin-left: 200px;
+    font-family: 'Gowun Dodum', sans-serif;
+  }
+  .column2{
+    flex:2;
+    display:flex;
+    flex-direction:column;
+  }
+  
+  .calumn2_box{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+  }
+  
+  /*
+  .column2-1{
+    flex:2;
+    background-color: white;
+    border-radius:9px;
+    font-family: 'Gowun Dodum', sans-serif;
+    overflow:scroll;
+  }
+  */
+
+  .column3{
+    flex:0.3;
+    margin-right: 10px;
+    text-align: center;
+  }  
+  .menubutton{
+    flex:0.2;
+    display:flex;
+    flex-direction: column;
+    margin-top: 70px;
+    font-family: 'Teko', sans-serif;
+    list-style:none;
+  }
+  .home{
+    flex: 0.16;
+    background-color: rgb(152, 174, 187);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+  .home:hover {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .diary{
+    flex: 0.16;
+    background-color: rgb(152, 174, 187);
+  
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+  .diary:hover {
+    background-color: rgb(255, 255, 255);
+  }
+  .photo {
+    flex: 0.16;
+    background-color: rgb(152, 174, 187);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+  
+  .photo:hover {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .guest {
+    flex: 0.16;
+    background-color: rgb(152, 174, 187);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+  
+  .guest:hover {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .profile-dropdown {
+    flex: 0;
+    border: 1px solid #c9d4da;
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    position: relative;
+  }
+  
+  .triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 4.5px solid transparent;
+    border-right: 4.5px solid transparent;
+    border-top: 5px solid #a1abbe;
+  }
+  
+  .dropdown-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Gowun Dodum', sans-serif;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .profile-dropdown:hover > .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content > a {
+    display: block;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 5px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Gowun Dodum', sans-serif;
+  }
+  
+  .dropdown-content > a:hover {
+    background-color: #f1f1f1;
+  }
